@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de JavaScript</title>
+</head>
+<body>
+    <h1>Para practicar a programar en JavaScript</h1>
+
+ <script>
+
+    //FUNDAMENTO PRIMITIVOS
+
+    
+//Practica de Cadena de Texto//
+/*
+let nombre= "Nube";
+let raza= "Caniche";
+let saludo = new String("Hola Mundo");
+let lorem = "              Lorem ipsum, dolor sit amet consectetur adipisicing elit.Est, et dolorum. Adipsicing sequi, voluptates accusamus earum magnam non pariatur odit consequuntur dicta modi. Quam soluta aliquid nam ea quod dolore.";
+
+console.log(nombre,raza,saludo);
+console.log(nombre.length,
+raza.length,
+saludo.length),
+nombre.toLocaleUpperCase(),//Para obligar a escribir todo en máyuscula//
+raza.toLowerCase(),//Para obligar a escribir todo en minúscula//
+lorem.includes("amet"),//Para buscar una palabra si esta es "TRUE" sino esta en "FALSE"//
+lorem.includes("nube"),
+lorem.trim(),//Quita los espacios que se encuantran al inicio y al final.//
+lorem.split(",")//En cada espacio en blanco o palabra se vuelva un arreglo y lo separa.//
+);//La propiedad length nos ayuda a saber cuantos caracters o lugares ocupa.
+//El espacio en blanco tambien en un carácter//
+*/
+
+//Template String para practicar//
+/*
+let nombre ="Nube";
+let apellido ="Salinas";
+//Concatenación
+let saludo = ( "Hola mi nombre es"+" "+ nombre + " "+ apellido);//Concatenar es unir con el signo de sumar y las variables para que salga el texto en la cansola
+console.log(saludo);
+ 
+//Interpolación: es meter dentro de una cadena de texto el vaalor dinamico de una variable.
+//Template String son las comillas invertidas
+let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`
+console.log(saludo2);
+//las Template Strings nos permiten saltos de linea.
+let ul =`
+    <ul>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+        <li>Primavera</li>
+    </ul>`
+console.log(ul);
+*/
+/*
+let nombre= "Jennifer";
+let apellido ="Salinas";
+let trabajo = "Programación";
+let pasatiempo = "Costura";
+let horas = 24;
+let dias = 7;
+
+let semana= `Hola mi nombre es ${nombre} ${apellido}
+ y estoy estudiando la carrera de ${trabajo} las ${horas} horas de los ${dias} 
+ de la semana pero tambien tengo un pasatiempo de ${pasatiempo}`;
+
+console.log(semana.includes("las"));
+
+let escucho = "WayV";
+let practico = "JavaScript";
+let viajo = "Lanús";
+let injeccion = "Vacuna";
+
+let lunes = `Hoy viaje a ${viajo} para poder darme la ${injeccion}
+de covid pero no me siento tan mal como creía, por eso estoy 
+programando en ${practico} mientras escucho ${escucho} `;
+
+console.log(lunes);
+*/
+
+//NUMEROS:
+/*
+let a = 2;
+let b = new Number(1);
+let c = 7.19;
+let d ="5.6";
+
+
+console.log(a,b);
+console.log(c.toFixed(1));
+console.log(parseInt(c)); 
+console.log(typeof c, typeof d);
+
+console.log(a+b);
+console.log(c + parseInt());
+console.log(parseFloat(c));
+
+console.log(c + Number.parseFloat(d));//Cuelga de constructor de Number.
+*/
+
+
+
+//BOOLEANS
+/*
+let verdadero = true;
+let falso = false;
+*/
+/*Hay valores que no son, ni verdadero ni falso pero que tienden a serlo*/
+
+/*
+console.log(Boolean(0));//tiende a falso.
+console.log(Boolean(-7));// tiende a verdadero.
+console.log(Boolean(""));//Una cadena de texto vacia es falso.
+console.log(Boolean(" "));//Una cadena de texto llena en verdadero.
+*/
+//Buscar en mozila truty exprsiones que tienden a verdaero o falso.
+
+
+//UNDEFINED, NULL & NaN
+
+//undefined: es un valor nulo asignado por el programa de JavaScript.
+/*
+let indefinida;
+console.log(indefinida);
+
+//null: tambien un valor nulo pero lo asigna el programador.
+
+let nulo= null;
+console.log(nulo);
+
+//NaN Not a Number no es un numero.
+
+let noEsUnNumero = "hola" *3.7;
+console.log(noEsUnNumero);
+
+//ES LA MESCLA ENTRE ALGORITMO DE UN NUMERO Y UN STRING.
+
+*/
+
+/*LAS FUNCIONES SON BOLQUES DE CÓDIGO QUE TIENE SU PROPIO CONTENIDO */
+
+/*Se define una sola vez y se puede llamar en cualquier momento 
+(SE PUEDE REUTIZAR LAS VECES QUE SEA NECESARIO)*/ 
+
+/*Una función puede o no recibir parametros, o devolver o no los 
+paramentros*/
+
+/*Se puede asignar como valor, se puede retornar, etc*/
+
+//DECLARACIÓN DE FUNCIÓN
+/*
+Una función es un bloque de código, autocontenido, que se puede 
+definir una vez y ejecutar en cualquier momento.
+Opcionalmente, una función puede aceptar parámetros y devolver u7n valor.
+
+Las funciónes en JavaScrpt son objetos, un tipo especial de objetos:
+
+Se dice que las funciones son ciudadanos de primera clase por que pueden 
+asignarse a un valor, y pueden pasarse como argumentos y usarse como un
+valor remoto.
+*/
+//Esta funcion no recibe parametros ni devuelve valores
+
+//function estoEsUnaFuncion(){
+ /*   console.log("Uno");
+    console.log("Dos");
+    console.log("Tres");
+}
+*/
+//INVOCACIÓN DE FUNCIONES =  es decir que hay que mandarla a llamar.
+
+//estoEsUnaFuncion();//SE  LLAMA CON EL NOMBRE DE LA FUNCION Y EL PARENTESIS.
+
+//function unaFuncionQueDevuelveValor(){
+//    console.log("Uno");
+//    return 19;
+/*Cuando aparece la palabra return el compilador ignora todolo demás*/
+ //   console.log("Dos");
+ //   console.log("Tres");
+//  return "La función a retornado una cadena de texto";
+ //}//PARA QUE RETORNE UN VALOR SE USA LA PALABRA RETURN.
+
+ /*PARA QUE PUEDA RETORNAR SIEMPRE DEBE TERNER UN CONSOLE.G O
+  ASIGNARLE UNA VARIABLE*/
+
+//let valorDeFuncion = unaFuncionQueDevuelveValor();
+/*Cuando tiene que retornar 
+un valor.*/
+
+//console.log(valorDeFuncion);
+/*Se usa el nombre de la variable para mostrar en la consola*/
+
+/*function saludar(nombre="Desconocido",edad = 1){
+    console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+}
+
+saludar("nube",2);
+saludar();
+*/
+//Funciones Declaradas vs Funciones Expresadas
+
+//funcionDeclarada();
+/*
+function funcionDeclarada(){
+    console.log(`Esto es una funcion declarada puede invocarse
+    en cualquier parte de nuestro código incluso antes de que la 
+    función sea declarada`);
+}
+
+funcionDeclarada();
+*/
+/*Utilizar las funciones como expresiones*/
+
+//Función anónima/ aparte se le asigna como valor a una variable.
+/*
+const funcionExpresada = function (){
+    console.log(`Esto es una función expresada es decir, una función 
+    que se le ha asignado como valor a una variable, si invocamos esta 
+    función antes de su definición JS nos dirá..."(Uncaught ReferenceError:
+     Cannot access 'funcionExpresada' before initialization
+    at)"`)
+}
+
+funcionExpresada();//es igual a una funcion declarada para llamarla.
+*/
+/*La Función Expresada no ser llamada antes de ser declarada esa es la 
+diferencia con la FUNCIÓN DECLARADA*/
+
+/*
+PRIMERO= Declarar las funciónes.
+SEGUNDO= Ejecutar código.
+LA PRACTICA MÁS UTILIZADA ES LA FUNCIÓN EXPRESADA.
+*/
+
+
+
+
+
+
+ </script>
+    
+</body>
+</html>
